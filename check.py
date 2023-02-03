@@ -13,7 +13,7 @@ def check_username(username):
     if response.status_code == 404:
         prGreen(f'Username {username} is available')
 
-with open('meow.txt', 'r') as file:
+with open('names.txt', 'r') as file:
     for username in file:
         username = username.strip()
         check_username(username)
